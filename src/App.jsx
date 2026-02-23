@@ -10,12 +10,17 @@ import Projects from './pages/Projects'
 import CustomNavbar from './components/CustomNavBar'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
-      <CustomNavbar>
-      </CustomNavbar>
+      <CustomNavbar/>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/projects" element={<Projects />} />
+        </Routes>
     </>
   );
 }

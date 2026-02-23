@@ -21,6 +21,28 @@ body{
   font-family: "Courier New", Courier, monospace;
   background-color: #303134;
   color: #ffffff; 
+  margin: 0 auto; 
+  text-align: left;
+}
+
+.contact {
+  padding-top: 100px;   /* space below navbar */
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.contact-row {
+  display: grid;
+  grid-template-columns: 40px 1fr;  /* fixed icon column */
+  align-items: center;
+  margin-bottom: 18px;
+  font-size: 1.1rem;
+  letter-spacing: 0.3px;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
 }
 
 .custom-navbar {
