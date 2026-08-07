@@ -5,7 +5,7 @@ import Home from './pages/Home'
 import Contact from './pages/Contact'
 import Blog from './pages/Blog'
 import Projects from './pages/Projects'
-import CustomNavbar from './components/CustomNavBar'
+import CustomNavbar from './components/CustomNavbar'
 import BlogPostContextProvider from './pages/BlogPostContextProvider'
 
 function App() {

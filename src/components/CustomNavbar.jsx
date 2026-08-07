@@ -4,7 +4,7 @@ import { Link, useLocation } from "react-router-dom";
 import { BlogContext } from "../pages/BlogPostContextProvider";
 import  DarkLightModeButton from "./DarkLightModeButton";
 
-function CustomNavBar() {
+function CustomNavbar() {
   const navItems = [
     { name: "Home", path: "/" },
     { name: "About", path: "/about" },
@@ -55,4 +55,4 @@ function CustomNavBar() {
   );
 }
 
-export default CustomNavBar;
+export default CustomNavbar;
