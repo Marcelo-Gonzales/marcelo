@@ -3,8 +3,8 @@ function Home(){
 
     return (
         <>
-            <h1>Marcelo F. Gonzales</h1>
-            <h2>Software Engineer | Mechanical Engineer</h2>
+            <h1>λ Marcelo Gonzales</h1>
+            <h2>Mechanical Engineer • Physics Student</h2>
         </>
     )
 }

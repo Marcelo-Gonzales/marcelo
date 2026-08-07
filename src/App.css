@@ -1,7 +1,7 @@
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
   text-align: center;
 }
 
@@ -17,23 +17,16 @@
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
-body{
-  font-family: "Courier New", Courier, monospace;
-  background-color: #303134;
-  color: #ffffff; 
-  margin: 0 auto; 
-  text-align: left;
-}
 
 .contact {
-  padding-top: 100px;   /* space below navbar */
+  padding-top: 100px;
   max-width: 800px;
   margin: 0 auto;
 }
 
 .contact-row {
   display: grid;
-  grid-template-columns: 40px 1fr;  /* fixed icon column */
+  grid-template-columns: 40px 1fr;
   align-items: center;
   margin-bottom: 18px;
   font-size: 1.1rem;
@@ -42,22 +35,30 @@ body{
 
 .icon {
   display: flex;
-  justify-content: center;
+  align-items: center;
 }
 
 .custom-navbar {
-  background-color: #303134;
+  background-color: transparent !important;
+  color: inherit;
+}
+.custom-navbar .navbar-brand,
+.custom-navbar .nav-link {
+  color: inherit !important;
 }
 
 .navbar .nav-link {
-  color: #ffffff;
+  color: inherit;
   font-size: 2rem;
-  transition: font-size 0.2s ease;
+  transition: transform 0.2s ease;
 }
 
 .custom-navbar .nav-link:hover {
-  color: #ffffff;
-  font-size: 2.5rem;
+  color: inherit;
+  transform: scale(1.25);
+}
+ul{
+  list-style-type: none;
 }
 
 @keyframes logo-spin {
@@ -81,4 +82,75 @@ body{
 
 .read-the-docs {
   color: #888;
+}
+
+footer {
+  width: 100%;
+  padding: 1.5rem;
+  font-size: 0.8rem;
+  opacity: 0.55;
+}
+
+footer p {
+  text-align: center;
+  margin: 0;
+}
+
+.dark-light-mode-button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: none !important;
+  color: inherit !important;
+  border: none !important;
+
+  padding: 0;
+  margin: 0 2rem 0 0;
+
+  font-family: inherit;
+  font-size: 2rem;
+  line-height: 1;
+}
+
+.dark-light-mode-button:hover,
+.dark-light-mode-button:focus,
+.dark-light-mode-button:active{
+  background-color: inherit !important;
+  color: inherit !important;
+  border: 0px; 
+  opacity: 0.8;
+}
+
+.blog-button{
+  width: 300px;
+  height: 80px;
+  overflow: hidden;
+  font-family: inherit;
+}
+
+.blog-button span{
+  display: inline-block;
+  transition: transform 0.2s ease;
+  transform: scale(1); 
+}
+
+.blog-button:hover span{
+  transform: scale(1.2);
+}
+
+
+main {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  box-sizing: border-box;
+
+  min-height: calc(100vh - 200px);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }

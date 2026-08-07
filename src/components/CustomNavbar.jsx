@@ -1,6 +1,8 @@
-import { useState } from "react";
-import { Navbar, Container, Nav } from "react-bootstrap";
+import { useContext, useState } from "react";
+import { Navbar, Container, Nav, Button } from "react-bootstrap";
 import { Link, useLocation } from "react-router-dom";
+import { BlogContext } from "../pages/BlogPostContextProvider";
+import  DarkLightModeButton from "./DarkLightModeButton";
 
 function CustomNavBar() {
   const navItems = [
@@ -8,7 +10,7 @@ function CustomNavBar() {
     { name: "About", path: "/about" },
     { name: "Blog", path: "/blog" },
     { name: "Contact", path: "/contact" },
-    { name: "Projects", path: "/projects" },
+    //{ name: "Projects", path: "/projects" },
   ];
 
   const [hovered, setHovered] = useState(null);
@@ -22,6 +24,13 @@ function CustomNavBar() {
     if (isActive(item.path)) return `[${item.name}]`;
     return item.name;
   };
+  const {isPostActive, setPostActive} = useContext(BlogContext);
+
+  const handleNavClick = (name) => {
+    if (name === "Blog" && isPostActive){
+      setPostActive(false);
+    }
+  };
 
   return (
     <Navbar className="custom-navbar" fixed="top">
@@ -34,12 +43,14 @@ function CustomNavBar() {
               to={item.path}
               onMouseEnter={() => setHovered(item.name)}
               onMouseLeave={() => setHovered(null)}
+              onClick={() => handleNavClick(item.name)}
             >
               {label(item)}
             </Nav.Link>
           ))}
         </Nav>
       </Container>
+      <DarkLightModeButton></DarkLightModeButton>
     </Navbar>
   );
 }
