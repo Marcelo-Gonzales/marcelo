@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Button } from "react-bootstrap";
 
 function DarkLightModeButton(){
-    const [isLightTheme, setIsLightTheme] = useState(true);
+    const [isLightTheme, setIsLightTheme] = useState(false);
 
     useEffect(() => {
         document.documentElement.classList.toggle(
