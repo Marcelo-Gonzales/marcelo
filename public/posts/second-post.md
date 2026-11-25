@@ -2,7 +2,7 @@
 title: "113 days"
 ---
 
-# 113 days
+# Blog #1
 
 It has been 113 days since I quit my last position and took a chance to do something I've always wanted to do--pursue a mechanical engineering role. A lot of people tend to be afraid of taking chances on themselves, but I'm one of those people who will always advocate for pursuing your dreams; obviously within reason. Regardless, I'm not trying to be a Hollywood actor or anything outrageous. But even if it's something a little out there, I think it's probably worth exploring. I'm not gonna throw out clichés but we really do only live once. 
 
