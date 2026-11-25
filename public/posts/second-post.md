@@ -1,5 +1,5 @@
 ---
-title: "113 days"
+title: "Blog #1"
 ---
 
 # Blog #1
